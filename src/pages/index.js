@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { Link } from "gatsby";
 
 import Layout from '../components/layout'
 
@@ -20,12 +21,11 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h2>This is a starter for Gatsby.js V2, demonstrating successful integration with notion as a CMS</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+                        <p>Based on the Strata site template, designed by HTML5 UP.<br />Integrated with <a href="https://conradlin.com/blog/posts/host-gatsbyjs-blog-with-notion-cms-and-netlify-for-free/" target="_blank">notion</a> as a CMS for demonstration purposes by <a href="https://conradlin.com" target="_blank">Conrad Lin</a></p>
                         <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dMYKXVf88J0" target="_blank" className="button">Learn More</a></li>
                         </ul>
                     </section>
 
@@ -33,8 +33,8 @@ class HomeIndex extends React.Component {
                         <h2>Recent Sharing</h2>
 
                         <ul className="actions">
-                            <li><a href="blog" className="button">All Articles</a></li>
-                            <li><a href="subscribe" className="button">All Newsletters</a></li>
+                            <li><Link to={`blog`} className="button">All Articles</Link></li>
+                            <li><Link to={`subscribe`} className="button">All Newsletters</Link></li>
                         </ul>
                     </section>
 
@@ -68,7 +68,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="#">lets.talk@conradlin.com</a>
                                     </li>
                                 </ul>
                             </div>

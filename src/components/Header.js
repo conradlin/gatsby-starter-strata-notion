@@ -1,17 +1,16 @@
 import React from 'react'
-
+import { Link } from "gatsby";
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import avatar from '../assets/images/avatar.png'
 
 class Header extends React.Component {
     render() {
         return (
             <header id="header">
                 <div className="inner">
-                    <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
-                    <h1><strong>I am Strata</strong>, a super simple<br />
-                    responsive site template freebie<br />
-                    crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+                    <Link to="/" className="image avatar"><img src={avatar} alt="" /></Link>
+                    <h1>A super simple responsite site<br />template <strong>powered by <a href="https://conradlin.com/blog/posts/host-gatsbyjs-blog-with-notion-cms-and-netlify-for-free/" target="_blank">Notion</a></strong>,<br /> 
+                    crafted by <a href="https://conradlin.com" target="_blank">Conrad Lin</a>.</h1>
                 </div>
                 <Footer />
             </header>
