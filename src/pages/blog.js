@@ -19,7 +19,7 @@ const Blog = (props) => {
 export default Blog
 export const query = graphql`
   query {
-    allPosts(filter: {status: {eq: "published"}, content_type: {eq: "article"}}  sort: { fields: [publish_date], order: DESC }) {
+    allPosts(filter: {status: {eq: "published"}, content_type: {eq: "article"}}  sort: { fields: [publish_date___startDate], order: DESC }) {
       nodes {
         title
         tags
@@ -30,7 +30,9 @@ export const query = graphql`
         read_time
         cover_image
         slug
-        publish_date(fromNow: false)
+        publish_date{
+          startDate(formatString: "YYYY-MMM-DD", fromNow: false)
+        }
       }
     }
   }

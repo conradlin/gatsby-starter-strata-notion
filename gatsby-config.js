@@ -19,7 +19,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-notion-database`,
+      resolve: `@conradlin/gatsby-source-notion-database`,
       options: {
         sourceConfig: [
           {
