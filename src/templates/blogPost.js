@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { parseImageUrl } from 'notabase/src/utils'
+import { parseImageUrl } from '@conradlin/notabase/src/utils'
 
 
 export default ({ data }) => {
@@ -24,7 +24,9 @@ export const query = graphql`
       html
       title
       tags
-      publish_date
+      publish_date{
+        startDate(formatString: "YYYY-MMM-DD", fromNow: false)
+      }
       url
       desc
       color
