@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "@conradlin/gatsby-source-notion-database": "^0.7.4",
+    "@conradlin/gatsby-source-notion-database": "^0.7.5",
     "gatsby": "^2.15.14",
     "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-offline": "^3.0.6",
